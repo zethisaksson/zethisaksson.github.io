@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Zeth Isaksson</title>
-<meta name="description" content="Zeth Isaksson — Postdoctoral Researcher & Max Weber Fellow at the European University Institute. Historical political economy, the radical right, and political behaviour." />
+<meta name="description" content="Zeth Isaksson, Max Weber Fellow at the European University Institute and Researcher at Stockholm University. Historical political economy, the radical right, and political behaviour." />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Zeth Isaksson" />
@@ -15,21 +15,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%232E5A4E'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23EFF0EB' text-anchor='middle'%3EZI%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111111'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23FFFFFF' text-anchor='middle'%3EZI%3C/text%3E%3C/svg%3E" />
 
 <style>
   :root{
-    --paper:#EFF0EB;
-    --paper-warm:#E9EAE3;
-    --ink:#1C2B2D;
-    --ink-body:#26383A;
-    --ink-soft:#4C5C59;
-    --pine:#2E5A4E;
-    --pine-deep:#22453B;
-    --line:#D5D8CE;
-    --line-soft:#E1E3DA;
-    --grid:rgba(46,90,78,0.055);
-    --tag-bg:rgba(46,90,78,0.09);
+    --paper:#FFFFFF;
+    --paper-warm:#F4F4F4;
+    --ink:#111111;
+    --ink-body:#222222;
+    --ink-soft:#5C5C5C;
+    --pine:#111111;
+    --pine-deep:#000000;
+    --line:#D6D6D6;
+    --line-soft:#E8E8E8;
+    --grid:rgba(0,0,0,0.045);
+    --tag-bg:rgba(0,0,0,0.06);
 
     --serif:"Spectral",Georgia,"Times New Roman",serif;
     --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -97,7 +97,7 @@
     background:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px),var(--paper-warm);
     background-size:22px 22px,22px 22px,auto;padding:0.9rem;}
   .plate svg{display:block;width:100%;height:auto;}
-  .plate .portrait{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 22%;}
+  .plate .portrait{filter:grayscale(1);display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 22%;}
   .plate svg.plate-fallback{display:none;}
   .plate .coord{display:flex;justify-content:space-between;align-items:baseline;margin-top:0.7rem;color:var(--ink-soft);}
   .plate .coord b{color:var(--pine);font-weight:500;}
@@ -139,6 +139,18 @@
     color:var(--pine-deep);background:var(--tag-bg);padding:0.16rem 0.5rem;border-radius:2px;margin-left:0.35rem;vertical-align:1px;}
 
   /* ---------- Work in progress ---------- */
+  ol.publist{list-style:none;margin:0;padding:0;}
+  ol.publist li{display:grid;grid-template-columns:3.4rem 1fr;gap:0 1rem;padding:0.85rem 0;border-top:1px solid var(--line-soft);}
+  ol.publist li:first-child{border-top:0;}
+  .py{font-family:var(--mono);font-size:0.72rem;color:var(--pine);padding-top:0.3rem;}
+  .pt{display:block;color:var(--ink);line-height:1.4;}
+  .pt em{color:var(--ink-soft);font-size:0.92em;}
+  .pv{display:block;font-style:italic;color:var(--ink-soft);font-size:0.95rem;margin-top:0.15rem;}
+  .pv .tag{font-style:normal;margin-left:0.4rem;}
+  .count{color:var(--ink-soft);margin:1.4rem 0 0.6rem;}
+  .subhead{color:var(--pine);margin:2.4rem 0 0.4rem;}
+  #wip .subhead:first-of-type{margin-top:0.4rem;}
+  .referee{color:var(--ink);line-height:1.9;margin:0;}
   ol.wip{list-style:none;margin:0;padding:0;}
   ol.wip li{padding:0.9rem 0;border-top:1px solid var(--line-soft);display:flex;justify-content:space-between;gap:1rem;align-items:baseline;flex-wrap:wrap;}
   ol.wip li:first-child{border-top:0;}
@@ -231,18 +243,17 @@
         <span class="eyebrow mono rise">Historical Political Economy · The Radical Right</span>
         <h1 class="name rise d1">Zeth Isaksson</h1>
         <p class="role rise d1">
-          Postdoctoral Researcher &amp; Max Weber Fellow
-          <span class="sub">European University Institute · Florence</span>
+          Max Weber Fellow &amp; Researcher
+          <span class="sub">European University Institute · Stockholm University</span>
         </p>
         <p class="lede rise d2">
-          Why do people vote the way they do? I work on that question from two angles —
-          the long shadow of history, and the rise of the radical right — using registry,
+          Why do people vote the way they do? I work on that question from two angles: the long shadow of history and the rise of the radical right. I use registry,
           archival, and survey data with causal-inference methods.
         </p>
         <div class="actions rise d3">
           <a class="primary" href="mailto:zeth.isaksson@eui.eu">Email</a>
-          <a href="https://github.com/zethisaksson/zethisaksson.github.io/blob/main/CV_Zeth_Isaksson.pdf">Curriculum Vitae</a>
-          <a href="https://scholar.google.com/citations?user=OzGUwC0AAAAJ&hl=sv&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="#cv">Curriculum Vitae</a>
+          <a href="#" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://bsky.app/profile/zethis.bsky.social" target="_blank" rel="noopener">Bluesky</a>
         </div>
       </div>
@@ -279,13 +290,15 @@
       <p>
         Empirically I work mostly with Swedish and post-socialist administrative and survey
         data, historical records, and quasi-experimental designs.
-        My research has appeared in <em>Electoral Studies</em>, <em>Party Politics</em>,
-        <em>Acta Politica</em>, the <em>Journal of Elections, Public Opinion &amp; Parties</em>,
-        <em>Energy Policy</em>, and <em>Sociologia Ruralis</em>, among others.
+        My research has appeared in <em>West European Politics</em>, <em>Energy Policy</em>, <em>Electoral Studies</em>,
+        <em>Party Politics</em>, <em>Acta Politica</em>, the <em>Journal of Elections, Public
+        Opinion &amp; Parties</em>, and <em>Sociologia Ruralis</em>, among others.
       </p>
       <p>
         I received my PhD from Stockholm University in 2025 and have held visiting positions at
         the EUI, the WZB in Berlin, and Stockholm University's Department of Political Science.
+        I am also a researcher on a Swedish Research Council project (2026&ndash;2028) on structural
+        change and radical-right support.
       </p>
       <p>
         I'm always open to new collaborations. Much of my research is single-authored — I think
@@ -300,116 +313,33 @@
   <section id="research">
     <div class="wrap">
       <span class="sec-label mono">Research</span>
-      <h2>Two distinct profiles</h2>
+      <h2>Publications</h2>
       <p class="research-intro">
-        My research runs along two distinct profiles. For the most part they stay separate —
-        different questions, data, and literatures — but every so often they speak to one another.
+        My work runs along two distinct profiles: historical political economy, and the radical
+        right and rural political behaviour. For the most part they stay separate, but every so
+        often they speak to one another.
       </p>
+      <p class="count mono">11 peer-reviewed articles · 10 solo-authored</p>
 
-      <!-- Profile I -->
-      <div class="profile">
-        <span class="profile-kicker mono">Profile — Historical Political Economy</span>
-        <p class="profile-head">The long shadow of history</p>
-        <p class="profile-desc">
-          I use registry, census, and archival data to follow political behaviour across long
-          stretches of time, asking what earlier regimes leave behind. Much of this work is set
-          in post-socialist Europe, where I trace how party membership, protest, and repression
-          under authoritarian rule continue to shape turnout and partisanship decades after
-          transition.
-        </p>
-        <ol class="pubs">
-          <li>
-            <span class="pub-title">Persistent Breeze from the Winds of Change: Political Behaviour Among Protest Participants After Democratic Transition</span>
-            <div class="pub-meta"><span class="venue">Electoral Studies</span> · 2025</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Persistent+Breeze+Winds+of+Change+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-            </div>
-          </li>
-          <li>
-            <span class="pub-title">Repression, Party Ties, and Political Beliefs: Ideological Continuities Among Voters After Socialism</span>
-            <div class="pub-meta"><span class="venue">Party Politics</span> · 2025</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Repression+Party+Ties+Political+Beliefs+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-            </div>
-          </li>
-          <li>
-            <span class="pub-title">Behind the Wall: Did the Lack of Interaction Between East and West Contribute to the Rise of the Radical Right?</span>
-            <div class="pub-meta"><span class="venue">Acta Politica</span> · 2024</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Behind+the+Wall+East+West+Radical+Right+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-            </div>
-          </li>
-        </ol>
-      </div>
+      <!-- Add a paper link by wrapping the title: <a href="URL">Title</a> -->
+      <ol class="publist">
+        <li><span class="py">2026</span><div><span class="pt">Social Mobility and Cross-Pressured Preferences</span><span class="pv">West European Politics <span class="tag">Forthcoming</span></span></div></li>
+        <li><span class="py">2026</span><div><span class="pt">Legacies of Communism: State of the Art and Future Directions</span><span class="pv">Political Research Exchange</span></div></li>
+        <li><span class="py">2026</span><div><span class="pt">Jumping on the Bandwagon or off the Sinking Ship: Electoral Support and Candidate Supply</span><span class="pv">Scandinavian Political Studies</span></div></li>
+        <li><span class="py">2026</span><div><span class="pt">How Car Culture Drives Political Preferences in Rural Regions: Evidence from Sweden</span><span class="pv">Sociologia Ruralis</span></div></li>
+        <li><span class="py">2025</span><div><span class="pt">Persistent Breeze from the Winds of Change: Political Behaviour Among Protest Participants After Democratic Transition</span><span class="pv">Electoral Studies</span></div></li>
+        <li><span class="py">2025</span><div><span class="pt">Repression, Party Ties, and Political Beliefs: Ideological Continuities Among Voters After Socialism</span><span class="pv">Party Politics</span></div></li>
+        <li><span class="py">2024</span><div><span class="pt">Spirited Away: Access to Alcohol and Support for the Populist Radical Right</span><span class="pv">Electoral Studies</span></div></li>
+        <li><span class="py">2024</span><div><span class="pt">Political Expectations and Electoral Responses to Wind Farm Development in Sweden <em>(with Simon Gren)</em></span><span class="pv">Energy Policy</span></div></li>
+        <li><span class="py">2024</span><div><span class="pt">Candidate Shortages and the Electoral Consequences for Radical Right-Wing Parties: Insights from Sweden</span><span class="pv">Journal of Elections, Public Opinion &amp; Parties</span></div></li>
+        <li><span class="py">2024</span><div><span class="pt">Behind the Wall: Did the Lack of Interaction Between East and West Contribute to the Rise of the Radical Right?</span><span class="pv">Acta Politica</span></div></li>
+        <li><span class="py">2023</span><div><span class="pt">Political Effects of Rural School Closures: Evidence from Sweden</span><span class="pv">Journal of Rural Studies</span></div></li>
+      </ol>
 
-      <!-- Profile II -->
-      <div class="profile">
-        <span class="profile-kicker mono">Profile — The Radical Right</span>
-        <p class="profile-head">Structural and cultural roots of the far-right surge</p>
-        <p class="profile-desc">
-          Here I ask why support for the radical right has grown, and argue that neither economics
-          nor culture explains it on its own. Working mostly in rural Sweden, I study how local
-          shocks — school and business closures, alcohol access, infrastructure, candidate supply —
-          combine with cultural attachments to move votes.
-        </p>
-        <ol class="pubs">
-          <li>
-            <span class="pub-title">How Car Culture Drives Political Preferences in Rural Regions: Evidence from Sweden</span>
-            <div class="pub-meta"><span class="venue">Sociologia Ruralis</span> · 2026</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Car+Culture+Political+Preferences+Rural+Sweden+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-            </div>
-          </li>
-          <li>
-            <span class="pub-title">Spirited Away: Access to Alcohol and Support for the Populist Radical Right</span>
-            <div class="pub-meta"><span class="venue">Electoral Studies</span> · 2024</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Spirited+Away+Alcohol+Populist+Radical+Right+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-              <span class="press">Press:
-                <a href="https://www.dagensps.se/varlden/stangd-krog-da-rostar-folk-pa-sd/" target="_blank" rel="noopener">Dagens PS</a>,
-                <a href="https://www.etc.se/inrikes/krogen-staenger-daa-roestar-fler-paa-sd" target="_blank" rel="noopener">Dagens ETC</a>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="pub-title">Candidate Shortages and the Electoral Consequences for Radical Right-Wing Parties: Insights from Sweden</span>
-            <div class="pub-meta"><span class="venue">Journal of Elections, Public Opinion &amp; Parties</span> · 2024</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Candidate+Shortages+Radical+Right+Sweden+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-            </div>
-          </li>
-          <li>
-            <span class="pub-title">Political Effects of Rural School Closures: Evidence from Sweden</span>
-            <div class="pub-meta"><span class="venue">Journal of Rural Studies</span> · 2023</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Political+Effects+Rural+School+Closures+Sweden+Isaksson" target="_blank" rel="noopener">Scholar ↗</a>
-              <span class="press">Press:
-                <a href="https://www.altinget.se/artikel/socialdemokraterna-forlorar-mest-paa-skolstangningar" target="_blank" rel="noopener">Altinget</a>,
-                <a href="https://www.dagensarena.se/innehall/socialdemokraterna-straffas-hardast-vid-skolnedlaggningar/" target="_blank" rel="noopener">Dagens Arena</a>,
-                <a href="https://www.dagenssamhalle.se/styrning-och-beslut/demokrati/sa-straffar-valjarna-partier-efter-skolnedlaggningar/" target="_blank" rel="noopener">Dagens Samhälle</a>
-              </span>
-            </div>
-          </li>
-          <li>
-            <span class="pub-title">Political Expectations and Electoral Responses to Wind Farm Development in Sweden <em>(with Simon Gren)</em></span>
-            <div class="pub-meta"><span class="venue">Energy Policy</span> · 2024</div>
-            <div class="pub-links">
-              <a href="#" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://scholar.google.com/scholar?q=Political+Expectations+Wind+Farm+Sweden+Isaksson+Gren" target="_blank" rel="noopener">Scholar ↗</a>
-              <span class="press">Press:
-                <a href="https://www.extrakt.se/minskat-valjarstod-nar-kommuner-bygger-vindkraft/" target="_blank" rel="noopener">Extrakt</a>
-              </span>
-            </div>
-          </li>
-        </ol>
-      </div>
+      <p class="subhead mono">Dissertation</p>
+      <ol class="publist">
+        <li><span class="py">2025</span><div><span class="pt">Political Behavior in the Shadow of Socialism</span><span class="pv">Stockholm University</span></div></li>
+      </ol>
     </div>
   </section>
 
@@ -417,15 +347,24 @@
   <section id="wip">
     <div class="wrap">
       <span class="sec-label mono">Work in Progress</span>
-      <h2>Under review &amp; in preparation</h2>
+      <h2>In the pipeline</h2>
+
+      <p class="subhead mono">Revise &amp; resubmit · Under review</p>
       <ol class="wip">
-        <li><span class="wip-title">Legacies of Communism: State of the Art and Future Directions</span><span class="wip-status">R&amp;R</span></li>
-        <li><span class="wip-title">Jumping on the Bandwagon or off the Sinking Ship: Electoral Support and Candidate Supply</span><span class="wip-status">R&amp;R</span></li>
-        <li><span class="wip-title">Social Mobility and Cross-Pressured Preferences</span><span class="wip-status">R&amp;R</span></li>
+        <li><span class="wip-title">Social Mobility and the Two Faces of Gender Backlash</span><span class="wip-status">R&amp;R</span></li>
+        <li><span class="wip-title">Turnout Without Turnover: Direct and Indirect Election in Sweden's Second Chamber, 1872&ndash;1908</span><span class="wip-status">Under review</span></li>
         <li><span class="wip-title">From Repression to Participation: How Historical Political Repression Shapes Long-term Political Participation</span><span class="wip-status">Under review</span></li>
-        <li><span class="wip-title">Social Mobility and the Two Faces of Gender Backlash</span><span class="wip-status">Under review</span></li>
-        <li><span class="wip-title">Democratic Protests as a Catalyst for Long-term Political Participation</span><span class="wip-status">In preparation</span></li>
-        <li><span class="wip-title">Beyond Borders: Landed Elites, Rural Conflict, and Diverging Political Behaviour in Transferred Regions</span><span class="wip-status">In preparation</span></li>
+      </ol>
+
+      <p class="subhead mono">In preparation</p>
+      <ol class="wip">
+        <li><span class="wip-title">Democratic Protests as a Catalyst for Long-term Political Participation</span></li>
+        <li><span class="wip-title">Beyond Borders: Landed Elites, Rural Conflict, and Diverging Political Behavior in Transferred Regions</span></li>
+        <li><span class="wip-title">The Political Circus</span></li>
+        <li><span class="wip-title">Who Prioritizes Political Rights? <em>(with Filip Kostelka)</em></span></li>
+        <li><span class="wip-title">The Repercussions of Unequal Political Representation: How Swedish Pre-1911 Democratic Inequality Shaped Later Politics <em>(with Jordi Dom&egrave;nech, Ilona Lahdelma &amp; Jakob Molinder)</em></span></li>
+        <li><span class="wip-title">The Unexpected Losers: Occupational Mismatch and Voter Turnout <em>(with Lloren&ccedil; Soler)</em></span></li>
+        <li><span class="wip-title">CO<sub>2</sub> Exposure, Environmental Trajectories, and Willingness to Pay for Environmental Taxes <em>(with Filip Olsson &amp; P&auml;r Dal&eacute;n)</em></span></li>
       </ol>
     </div>
   </section>
@@ -438,7 +377,6 @@
       <div class="grant-feature">
         <div class="fund mono">Swedish Research Council · 2026–2028 · 4.7M SEK</div>
         <p class="gtitle">Structural Change, Education, and the Radical Right: The Political Realignment of Young Men in Rural Sweden</p>
-        <p class="gmeta">PI: Jens Rydgren · Co-applicant: Sirus H. Dehdari</p>
       </div>
       <ul class="grant-list">
         <li><span class="yr">2026</span>European University Institute — €1,265</li>
@@ -463,21 +401,23 @@
         <div>
           <h3>Courses</h3>
           <ul>
-            <li>Introduction to Quantitative Methods (PhD)<span>European University Institute · Fall 2026</span></li>
-            <li>Globalization<span>Stockholm University · Spring 2024, 2025</span></li>
-            <li>Basic Methods<span>Stockholm University · 2022</span></li>
-            <li>External Examiner<span>University of Oslo · Fall 2022</span></li>
+            <li>Introduction to Quantitative Methods (PhD)<span>European University Institute · Fall 2026 · Convenor</span></li>
+            <li>Crash Course in Quantitative Methods (PhD)<span>Kyiv School of Economics &amp; Kyiv National Economic University · Fall 2026 · Convenor</span></li>
+            <li>Globalization (BA)<span>Stockholm University · Spring 2024, 2025 · Seminar leader</span></li>
+            <li>Basic Methods (BA)<span>Stockholm University · Spring &amp; Fall 2022 · Seminar leader</span></li>
           </ul>
         </div>
         <div>
           <h3>Supervision</h3>
           <ul>
-            <li>Master's theses<span>2 · Stockholm University</span></li>
+            <li>Master's theses<span>2 · Stockholm University · both students now in research positions</span></li>
             <li>Bachelor's theses<span>2 · Stockholm University</span></li>
+            <li>External examiner, master's thesis<span>University of Oslo · 2022</span></li>
           </ul>
-          <h3 style="margin-top:1.6rem;">Training</h3>
+          <h3 style="margin-top:1.6rem;">Pedagogical training</h3>
           <ul>
-            <li>University Teaching &amp; Learning<span>Stockholm University · 5 weeks</span></li>
+            <li>EUI Teaching Certificate<span>European University Institute · completing spring 2027</span></li>
+            <li>University Teaching &amp; Learning<span>Stockholm University · 5 weeks full-time</span></li>
           </ul>
         </div>
       </div>
@@ -490,15 +430,12 @@
       <span class="sec-label mono">Talks</span>
       <h2>Presentations</h2>
       <div class="yeargroup">
-        <div class="yr">Upcoming</div>
-        <ul>
-          <li>APSA Annual Meeting <span>· Boston</span></li>
-        </ul>
         <div class="yr">2026</div>
         <ul>
+          <li>APSA Annual Meeting <span>· Boston</span></li>
           <li>Max Weber Annual Conference <span>· Florence</span></li>
           <li>Centre for Baltic and East European Studies (CBEES) <span>· Stockholm</span></li>
-          <li>Internal Seminar, EUI <span>· Florence</span></li>
+          <li>Research Group Seminar, Dept. of Political &amp; Social Sciences, EUI <span>· Florence</span></li>
         </ul>
         <div class="yr">2025</div>
         <ul>
@@ -544,22 +481,50 @@
     </div>
   </section>
 
+  <!-- SERVICE -->
+  <section id="service">
+    <div class="wrap">
+      <span class="sec-label mono">Service</span>
+      <h2>Academic service</h2>
+      <div class="cols">
+        <div>
+          <h3>Boards</h3>
+          <ul>
+            <li>Department Board, Political &amp; Social Sciences<span>EUI · 2025&ndash; · Elected Max Weber Fellows representative</span></li>
+            <li>Board of the Faculty of Social Sciences<span>Stockholm University · Substitute PhD representative</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Referee for</h3>
+          <p class="referee">Comparative Political Studies (2) · Electoral Studies (2) · Political Behavior · Political Studies · Environmental Politics · Election Law Journal · Nations and Nationalism · Social Problems · Social Science Research · Genus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- MEDIA -->
   <section id="media">
     <div class="wrap prose">
       <span class="sec-label mono">In the Media</span>
       <h2>Selected coverage</h2>
       <p style="max-width:66ch;">
-        A recognised commentator on Swedish politics, featured across hundreds of national and
-        international outlets — including one of the most-referenced Stockholm University
-        researchers in a single day around the 2022 election.
+        A recognised expert on Swedish politics and the radical right in both the 2022 and 2026
+        Swedish general elections, featured in hundreds of news articles, radio and TV programmes,
+        and podcasts. In 2022 I was among the most referenced Stockholm University researchers in a
+        single day, with over 500 article mentions worldwide.
       </p>
       <ul class="media-list">
+        <li><span class="outlet">AP</span><a href="https://apnews.com/article/sweden-election-parliament-kristersson-andersson-6671108eecef137f7bb9a9f545983c23" target="_blank" rel="noopener">Swedish voters go to polls to choose a new parliament as hard right bids for role in government</a><span class="yr">2026</span></li>
+        <li><span class="outlet">France 24</span><a href="https://www.france24.com/en/swedish-far-right-eyes-role-in-government" target="_blank" rel="noopener">Swedish far-right eyes role in government</a><span class="yr">2026</span></li>
+        <li><span class="outlet">Aftonbladet</span><a href="https://www.aftonbladet.se/nyheter/a/43wvlo/rekordmanga-har-rostat-i-utsatta-omraden" target="_blank" rel="noopener">Rekordmånga har röstat i utsatta områden</a><span class="yr">2026</span></li>
         <li><span class="outlet">Sveriges Radio</span>Varför växer det politiska gapet mellan män och kvinnor?<span class="yr">2026</span></li>
         <li><span class="outlet">SVT</span>Stora skillnader i ungas valdeltagande<span class="yr">2024</span></li>
-        <li><span class="outlet">Associated Press</span>Swedish conservatives close to election win amid crime fears<span class="yr">2022</span></li>
+        <li><span class="outlet">AP</span>Swedish conservatives close to election win amid crime fears<span class="yr">2022</span></li>
         <li><span class="outlet">Al Jazeera</span>Parties in Sweden election 'completely even' as far right surges<span class="yr">2022</span></li>
+        <li><span class="outlet">NBC News</span>Sweden's right-wing opposition slightly ahead in election still too close to call<span class="yr">2022</span></li>
         <li><span class="outlet">Dagens Nyheter</span>Högervind bland unga ökar stödet för kärnkraft<span class="yr">2022</span></li>
+        <li><span class="outlet">Aftonbladet</span>"Jag skäms inte att säga att jag röstar på SD"<span class="yr">2022</span></li>
+        <li><span class="outlet">Sveriges Radio</span>Kritiserad klimataktion kan påverka stödet för Miljöpartiet<span class="yr">2022</span></li>
       </ul>
     </div>
   </section>
